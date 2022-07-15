@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+html {
+    max-width: 1600px;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Sora', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    background-color: rgba(90, 90, 90, .5);
+  }
+
+body {
+    margin: 0;
+      
+  }
+
+.btn {
+  margin: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0rem .4rem 0rem 0rem rgba(225, 225, 225, 0.5);
+  color: black;
+}
+  
+.btn:hover {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+#heading {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex; */
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+}
+
+#heading .avatar {
+  margin-left: 10%;
+  background-color: white;
+  /* outline: 1rem solid rgba(30, 30, 30, .25); */
+  border-radius: 5%;
+  width: 15rem;
+  height: 15rem;
+  z-index: 1;
+}
+
+#heading .line {
+  position: absolute;
+  /* margin: calc(15/2)rem; */
+  height: 5rem;
+  width: 100vw;
+  backdrop-filter: blur(.25rem);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 40px rgb(8 7 16 / 60%);
+  /* background: rgba(30, 30, 30, .5); */
+  z-index: -1;
+}
+
+#heading #menu {
+  margin-left: auto;
+  margin-right: 1rem;
+}  
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
