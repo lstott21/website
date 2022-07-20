@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Avatar HTML https://d1a370nemizbjq.cloudfront.net/9613b473-60e5-42df-985e-8f0cf3943e59.glb -->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" type="text/css" />
-</head>
+  </head>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 
-<body>
-<!-- <canvas class="canvas" id="canvas-bottom" style="z-index: -10;"></canvas>
+  <body>
+    <!-- <canvas class="canvas" id="canvas-bottom" style="z-index: -10;"></canvas>
 <canvas class="canvas" id="canvas-top" style="z-index: -10;"></canvas> -->
-<div id="heading">
-    <div class="avatar"></div>
-    <div class="line"></div>
-    <div id="menu">
-        <a href="#" class="btn blue">Testing</a>
-        <a href="#" class="btn">Testing</a>
-    </div> 
-</div>
+    
+    <div id="main">
+      <div id="main-nav">
+        <a href="index.html" id="name">
+          Name
+        </a>
+        <div id="main-menu">
+          <a href="#contact" class="btn">Contact</a>
+          <a href="#blog" class="btn">Blog</a>
+          <a href="#portfolio" class="btn">Portfolio</a>
+          <a href="#services" class="btn">Services</a>
+        </div>
+      </div>
+      <div id="main-line"></div>
+    </div>
 
+    <div id="mobile">
+        <a href="index.html" class="icon">Name</a>
+        <a class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="mobile-menu"> 
+          <a href="#contact" class="mobile-btn">Contact</a>
+          <a href="#blog" class="mobile-btn">Blog</a>
+          <a href="#portfolio" class="mobile-btn">Portfolio</a>
+          <a href="#services" class="mobile-btn">Services</a>
+        </div>
+    </div>
 
-</body>
+    <section id="services">
+      <div class="containter">
+        <div class="head">Services</div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="containter">
+        <div class="head">Portfolio</div>
+      </div>
+    </section>
+
+    <section id="blog">
+        <div class="containter">
+            <div class="head">Blog</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="containter">
+            <div class="head">Contact</div>
+        </div>
+      </section>
+
+    <div id="signature">
+      Made by <a href="website_url">Designed by: Name</a>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="hamburger.js"></script>
+  </body>
 </html>
-
-<script src="main.js"></script>
-<!-- <script  src="./cosmic.js"></script>
-<script  src="./cosmic2.js"></script> -->
-<script scr="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
