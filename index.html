@@ -16,7 +16,7 @@
     <div id="main">
       <div id="main-nav">
         <a href="index.html" id="name">
-          Name
+          Lucas Stott
         </a>
         <div id="main-menu">
           <a href="#contact" class="btn">Contact</a>
@@ -29,7 +29,7 @@
     </div>
 
     <div id="mobile">
-        <a href="index.html" class="icon">Name</a>
+        <a href="index.html" class="icon">Lucas Stott</a>
         <a class="nav-toggle">
             <span></span>
             <span></span>
@@ -43,35 +43,90 @@
         </div>
     </div>
 
+
     <section id="services">
-      <div class="containter">
-        <div class="head">Services</div>
+      <div class="head">Services</div>
+      <div class="container">
+        <div class="glide">
+          <div data-glide-el="track" class="glide__track">
+            <ul class="glide__slides">
+              <li class="card">
+                
+                  <img  class="card-image" src="images/DSCF0622.JPG" alt="Car">
+                
+                <div class="card-text">CAD Design<br>Solidworks</div>
+              </li>
+              <li class="card">
+                <div class="card-image"></div>
+                <div class="card-text">This is text</div>
+              </li>
+              <li class="card">
+                <div class="card-image"></div>
+                <div class="card-text">This is text</div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left slider-arrow glid-icon" data-glide-dir="<">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"></path>
+              </svg>
+            </button>
+            <button class="glide__arrow glide__arrow--right slider-arrow glid-icon" data-glide-dir=">">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="portfolio">
-      <div class="containter">
-        <div class="head">Portfolio</div>
+      <div class="head">Portfolio</div>
+      <div class="container">
       </div>
     </section>
 
     <section id="blog">
-        <div class="containter">
-            <div class="head">Blog</div>
+      <div class="head">Blog</div>
+        <div class="container">
         </div>
       </section>
 
       <section id="contact">
-        <div class="containter">
-            <div class="head">Contact</div>
+        <div class="head">Contact</div>
+        <form id="contact-form">
+          <div id="form-name">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email">
+          </div>
+          <div id="form-message">
+            <input type="text" id="input-message" placeholder="Information">
+          </form>
         </div>
       </section>
 
-    <div id="signature">
-      Made by <a href="website_url">Designed by: Name</a>
-    </div>
+    
+    <a href="lstott.com" class id="signature">Designed by: lstott.com</a>
+    
 
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="hamburger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: 'carousel',
+        // autoplay: 4000,
+        perView: 3,
+        focusAt: 'center',
+        breakpoints: {
+          800: {
+            perView: 2
+          }
+        }
+      };
+      new Glide(".glide", config).mount();
+    </script>
   </body>
 </html>
